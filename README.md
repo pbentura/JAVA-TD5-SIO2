@@ -43,7 +43,7 @@ L'application doit permettre d'ajouter, de supprimer et de marquer des tâches c
 1. **Tests du modèle métier** :
    - Écrivez des tests pour la classe Task :
      - Tester que le constructeur initialise correctement les valeurs.
-     - Tester que la méthode markAsCompleted() fonctionne correctement.
+     - Tester que la méthode updateCompletion() fonctionne correctement.
    - Écrivez des tests pour la classe TaskManager :
      - Tester que l’ajout d’une tâche fonctionne.
      - Tester que la suppression d’une tâche fonctionne.
@@ -53,4 +53,4 @@ L'application doit permettre d'ajouter, de supprimer et de marquer des tâches c
    - Écrivez des tests pour vérifier :
      - Que l’ajout d’une tâche via l’interface met à jour la liste des tâches.
      - Que la suppression d’une tâche via l’interface fonctionne.
-     - Que la checkbox permet de marquer une tâche comme terminée.
+     - Que la mise à jour d’une tâche via l’interface fonctionne.
