@@ -23,7 +23,7 @@ L'application doit permettre d'ajouter, de supprimer et de marquer des tâches c
      - boolean completed : pour indiquer si la tâche est terminée.
    - Implémentez les méthodes suivantes :
      - Un constructeur pour initialiser une tâche.
-     - Une méthode markAsCompleted() pour marquer une tâche comme terminée.
+     - Une méthode updateCompletion() pour mettre à jour le status d'une tâche.
      - Les accesseurs (getters) et mutateurs (setters) nécessaires.
 2. **Logique métier** :
    - Créez une classe TaskManager qui gère une liste de tâches. Elle doit inclure :
@@ -35,8 +35,9 @@ L'application doit permettre d'ajouter, de supprimer et de marquer des tâches c
    - Créez une interface JavaFX avec les fonctionnalités suivantes :
      - Une zone de texte pour saisir le titre d’une tâche.
      - Un bouton pour ajouter une tâche.
-     - Une liste affichant les tâches (avec une checkbox pour marquer une tâche comme terminée).
+     - Une liste affichant les tâches.
      - Un bouton pour supprimer une tâche sélectionnée.
+     - Un bouton pour mettre à jour le status d'une tâche sélectionnée.
 
 ### Partie 2 : Tests unitaires
 1. **Tests du modèle métier** :
