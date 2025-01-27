@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - correction
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CheckoutCode
+        uses: actions/checkout@v3
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v3
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: install dependencies maven
+        run: mvn install -DskipTests=true
+
+      - name: run tests
+        run: mvn test
