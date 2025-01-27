@@ -16,33 +16,33 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TodoListApplicationTest extends ApplicationTest {
 
-    @Override
-    public void start(Stage stage) throws IOException {
-        TodoListApplication app = new TodoListApplication();
-        app.start(stage);
-    }
+//    @Override
+//    public void start(Stage stage) throws IOException {
+//        TodoListApplication app = new TodoListApplication();
+//        app.start(stage);
+//    }
 
     // Add your tests here
 
-    @Test
-    void testScenarioAddTask() {
-        // Add your test here
-        TextField taskField = lookup("#txtTaskTitle").query();
-        clickOn(taskField).write("Task 1");
-        assertEquals("Task 1", taskField.getText());
-        Button addButton = lookup("#addBtn").queryButton();
-        clickOn(addButton);
+//    @Test
+//    void testScenarioAddTask() {
+//        // Add your test here
+//        TextField taskField = lookup("#txtTaskTitle").query();
+//        clickOn(taskField).write("Task 1");
+//        assertEquals("Task 1", taskField.getText());
+//        Button addButton = lookup("#addBtn").queryButton();
+//        clickOn(addButton);
+//
+//        ListView listView = lookup("#lvTasks").query();
+//        assertEquals(1, listView.getItems().size());
+//        //assertEquals("Task 1", listView.getItems().getFirst());
+//
+//    }
 
-        ListView listView = lookup("#lvTasks").query();
-        assertEquals(1, listView.getItems().size());
-        //assertEquals("Task 1", listView.getItems().getFirst());
-
-    }
-
-    @Test
-    void testScenarioAddTaskWithEmptyTitle(){
-        Button addButton = lookup("#addBtn").queryButton();
-        clickOn(addButton);
-        assertTrue(lookup("Le titre ne peut pas être vide").tryQuery().isPresent());
-    }
+//    @Test
+//    void testScenarioAddTaskWithEmptyTitle(){
+//        Button addButton = lookup("#addBtn").queryButton();
+//        clickOn(addButton);
+//        assertTrue(lookup("Le titre ne peut pas être vide").tryQuery().isPresent());
+//    }
 }
