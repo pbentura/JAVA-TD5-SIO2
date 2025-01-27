@@ -16,5 +16,13 @@ jobs:
         java-version: [21]
 
     steps:
-      - name: Check PHP Version
-        run: echo "Coucou from ACTIONS"
+      - name: Starting RUNNER
+        run: echo "Launching tests for JAVA ${{ matrix.java-version }}"
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up JDK ${{ matrix.java-version }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'microsoft'
+          java-version: ${{ matrix.java-version }}
+          cache: 'maven'
